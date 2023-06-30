@@ -1,10 +1,13 @@
-var menu = document.querySelector('menu#menu')
-console.log(menu.style)
-
 function clickMenu() {
-    if(menu.style.display == "none") {
-        menu.style.display = "block"
-    }else if(menu.style.display == "block") {
-        menu.style.display = "none"
+    var btn_burger = document.getElementById('btn-hamburger')
+    var menu = document.getElementById('mobile-menu');
+
+    if (menu.style.display == 'block') {
+        menu.style.display = 'none'
+        btn_burger.innerText = 'menu'
+    }else {
+        menu.style.display = 'block'
+        btn_burger.innerText = 'close'
     }
+
 }
