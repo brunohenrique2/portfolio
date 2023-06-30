@@ -3,23 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
     <link rel="stylesheet" href="css/mobile.css">
     <title>Portfolio</title>
 </head>
 <body>
     <header>
-        <section>
-            <nav>
-                <a href="#">Inicio</a>
-                <a href="#">Sobre Mim</a>
-                <a href="#">Projetos</a>
-                <a href="#">Habilidades</a>
-            </nav>
-            <div>
-                <a href="https://github.com/brunohenrique2" target="_blank" rel="noopener noreferrer">Github</a>
-                <a href="https://www.linkedin.com/in/bruno-henrique-albino-soares-1b9b731b9/" target="_blank" rel="noopener noreferrer">Linkedin</a>
-            </div>
-        </section>
+        <span id="btn-hamburger" class="material-icons" onclick="clickMenu()">menu</span>
+        <menu id="menu">
+            <ul>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Sobre Mim</a></li>
+                <li><a href="#">Projetos</a></li>
+                <li><a href="#">Habilidades</a></li>
+            </ul>
+        </menu>
+        <div id="redes-sociais">
+            <a href="https://github.com/brunohenrique2" target="_blank" rel="noopener noreferrer"><img class="logo" src="img/github-logo.png" alt="link para meu github"></a>
+            <a href="https://www.linkedin.com/in/bruno-henrique-albino-soares-1b9b731b9/" target="_blank" rel="noopener noreferrer"><img class="logo" src="img/linkedin-logo.png" alt=""></a>
+        </div>
     </header>
     <main>
         <section>
@@ -41,7 +44,7 @@
                     Meu nome é Bruno Henrique, sou apaixonado por tecnologia e embarquei no universo da programação com um <strong>objetivo de criar coisas que ajudem ou divirtam as pessoas</strong>
                 </p>
                 <p>
-                    Meu foco atualmente é no Frontend, mas ja tive experiencia com <strong>Banco de Dados(MySQL)</strong> e <strong>Python </strong>
+                    Meu foco atualmente é no Frontend, mas ja tive experiencia com <strong>Banco de Dados(MySQL) e Python </strong>
                 </p>
             </div>
         </section>
@@ -77,5 +80,7 @@
     <footer>
         <p>Desenvolvido por: <strong>Bruno Henrique</strong></p>
     </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
