@@ -43,6 +43,7 @@ menu#menu {
 
 menu#mobile-menu {
     display: none;
+    
 }
 
 menu#mobile-menu > ul > li {
