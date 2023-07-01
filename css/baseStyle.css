@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --main-color: #090;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--main-color);
+    height: 70px;
+    padding: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+#btn-mobile {
+    display: block;
+    color: white;
+    font-size: 40px;
+}
+
+#menu {
+    display: none;
+}
+
+
+
