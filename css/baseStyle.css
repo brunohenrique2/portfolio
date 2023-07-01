@@ -19,7 +19,7 @@ header {
     align-items: center;
     background-color: var(--main-color);
     height: 70px;
-    padding: 10px;
+    padding: 1rem;
 }
 
 a {
@@ -27,13 +27,27 @@ a {
     text-decoration: none;
 }
 
-#btn-mobile {
-    display: block;
-    color: white;
-    font-size: 40px;
+#logo {
+    font-weight: bold;
+    font-size: 1.5em;
 }
 
 #menu {
+    display: flex;
+    list-style-type: none;
+    gap: 0.5rem;
+}
+
+#menu a {
+    padding: .5rem;
+}
+
+#menu a:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+
+#btn-mobile {
     display: none;
 }
 
