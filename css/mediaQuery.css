@@ -23,7 +23,7 @@ grandes telas: acima de 1440px
         display: block;
         position: absolute;
         width: 100%;
-        height: 0;
+        height: 0px;
         top: 70;
         right: 0;
         background-color: var(--main-color);
@@ -34,7 +34,7 @@ grandes telas: acima de 1440px
     }
     
     #nav.active #menu {
-        height: calc(100vh - 70px);
+        height: 160px;
         visibility: visible;
         overflow-y: auto;
     }
