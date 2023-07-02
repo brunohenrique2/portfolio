@@ -19,7 +19,7 @@ header {
     align-items: center;
     background-color: var(--main-color);
     height: 70px;
-    padding: 1rem;
+    padding: 15px;
 }
 
 a {
@@ -32,14 +32,22 @@ a {
     font-size: 1.5em;
 }
 
+#nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: calc(100% - 50px);
+}
+
+
 #menu {
     display: flex;
     list-style-type: none;
-    gap: 0.5rem;
+    gap: 10px;
 }
 
 #menu a {
-    padding: .5rem;
+    padding: 10;
 }
 
 #menu a:hover {
@@ -51,5 +59,16 @@ a {
     display: none;
 }
 
+#redes-sociais {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    width: 35px;
+}
 
 

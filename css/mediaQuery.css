@@ -30,7 +30,13 @@ grandes telas: acima de 1440px
         transition: 0.6s;
         visibility: hidden;
         overflow-y: hidden;
-        z-index: 999;
+        z-index: 100;
+    }
+
+    #nav {
+        flex-direction: row-reverse;
+        justify-content: end;
+        gap: 5px;
     }
     
     #nav.active #menu {
@@ -39,12 +45,19 @@ grandes telas: acima de 1440px
         overflow-y: auto;
     }
 
+    #gost {
+        display: none;
+    }
+
     #menu li {
         padding: 10px 0px;
         margin: 0px 10px;
         border-bottom: 2px solid rgba(0, 0, 0, 0.05);
     }
 
+    #redes-sociais {
+        justify-content: space-around;
+    }
 
 
 }
