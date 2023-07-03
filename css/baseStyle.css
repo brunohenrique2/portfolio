@@ -35,13 +35,13 @@ a {
 #nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
     width: calc(100% - 50px);
 }
 
 
 #menu {
     display: flex;
+    align-items: center;
     list-style-type: none;
     gap: 10px;
 }
