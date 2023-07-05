@@ -6,19 +6,22 @@
 
 :root {
     --main-color: #090;
+    --second-color: black;
 }
 
 html {
     scroll-behavior: smooth;
+    
 }
 header {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--main-color);
+    background-color: var(--second-color);
     height: 70px;
     padding: 15px;
+    border-bottom: 10px solid var(--main-color);
 }
 
 a {
@@ -30,13 +33,6 @@ a {
     font-weight: bold;
     font-size: 1.5em;
 }
-
-#nav {
-    display: flex;
-    justify-content: space-between;
-    width: calc(100% - 50px);
-}
-
 
 #menu {
     display: flex;
@@ -58,16 +54,52 @@ a {
     display: none;
 }
 
-#redes-sociais {
-    width: 85px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
 .logo {
     width: 35px;
+}
+
+main {
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+section#inicio {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    height: calc(100vh - 80px);
+    margin: auto;
+    padding: 10px;
+}
+
+div#foto {
+    background-color: gray;
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+.apt {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+p#nome {
+    font-size: 3em;
+    font-weight: bold;
+}
+
+div#redes-sociais {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer {
+    padding: 10px;
+    text-align: center;
 }
 
 

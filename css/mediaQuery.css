@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* 
    {TYPICAL DEVICE BREAK-POINS}
 ---------------------------------
@@ -12,7 +13,7 @@ grandes telas: acima de 1440px
     --main-color: #090;
 }
 
-@media screen and (max-width: 728px) { /**/
+@media screen and (max-width: 768px) { /**/
     #btn-mobile {
         display: block;
         color: white;
@@ -36,17 +37,13 @@ grandes telas: acima de 1440px
     #nav {
         flex-direction: row-reverse;
         justify-content: end;
-        gap: 5px;
+        gap: 12px;
     }
     
     #nav.active #menu {
         height: calc(100% - 70px);
         visibility: visible;
         overflow-y: auto;
-    }
-
-    #gost {
-        display: none;
     }
 
     #menu li {
@@ -58,10 +55,28 @@ grandes telas: acima de 1440px
         padding: 10px;
     }
 
-    #redes-sociais {
-        width: 80px;
-    
+    main > section#inicio {
+        flex-direction: column;
     }
 
+    div#foto {
+        width: 250px;
+        height: 250px;
+    }
+
+    div#hello p {
+        text-align: center;
+    }
+    .apt {
+        font-size: 1.5em;
+    }
+
+    p#nome {
+        font-size: 2em;
+    }
+
+    div#redes-sociais {
+        justify-content: center;
+    }
 
 }
