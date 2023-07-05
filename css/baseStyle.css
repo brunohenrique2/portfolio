@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 :root {
@@ -94,12 +94,37 @@ p#nome {
 div#redes-sociais {
     display: flex;
     align-items: center;
+    padding-top: 10px;
     gap: 10px;
 }
 
+main > section#sobre-mim {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    height: 100vh;
+}
+
+main > section#sobre-mim > h2 {
+    font-size: 3em;
+}
+
+main > section#sobre-mim p {
+    text-indent: 20px;
+    line-height: 30px;
+    text-align: justify;
+    font-size: 1.2em;
+    width: 700px;
+    margin: auto;
+}
+
 footer {
+    background-color: var(--second-color);
+    color: white;
     padding: 10px;
     text-align: center;
+    border-top: 10px solid var(--main-color);
 }
 
 

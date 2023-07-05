@@ -13,7 +13,7 @@ grandes telas: acima de 1440px
     --main-color: #090;
 }
 
-@media screen and (max-width: 768px) { /**/
+@media screen and (max-width: 768px) { /*Celular*/
     #btn-mobile {
         display: block;
         color: white;
@@ -47,7 +47,7 @@ grandes telas: acima de 1440px
     }
 
     #menu li {
-        border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
     }
     
     #menu > li > a {
@@ -77,6 +77,15 @@ grandes telas: acima de 1440px
 
     div#redes-sociais {
         justify-content: center;
+    }
+
+    main > section#sobre-mim p {
+        text-indent: 20px;
+        line-height: 24px;
+        text-align: justify;
+        font-size: 1.0em;
+        width: 400px;
+        margin: auto;
     }
 
 }
