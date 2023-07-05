@@ -59,7 +59,8 @@ grandes telas: acima de 1440px
     }
 
     #redes-sociais {
-        justify-content: space-around;
+        width: 80px;
+    
     }
 
 
