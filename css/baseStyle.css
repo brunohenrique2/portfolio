@@ -101,22 +101,23 @@ div#redes-sociais {
 main > section#sobre-mim {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
+    align-items: center;
     height: 100vh;
 }
 
 main > section#sobre-mim > h2 {
     font-size: 3em;
+    margin: 50px 0px 150px 0px;
 }
 
-main > section#sobre-mim p {
-    text-indent: 20px;
-    line-height: 30px;
+main > section#sobre-mim > div#descricao {
+    padding: 10px;
+    width: 600px;
+}
+
+main > section#sobre-mim > div#descricao > p {
     text-align: justify;
-    font-size: 1.2em;
-    width: 700px;
-    margin: auto;
+    text-indent: 20px;
 }
 
 footer {

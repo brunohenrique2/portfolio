@@ -79,13 +79,9 @@ grandes telas: acima de 1440px
         justify-content: center;
     }
 
-    main > section#sobre-mim p {
-        text-indent: 20px;
-        line-height: 24px;
-        text-align: justify;
-        font-size: 1.0em;
-        width: 400px;
-        margin: auto;
+    main > section#sobre-mim > div#descricao {
+        padding: 10px;
+        width: 300px;
     }
 
 }
