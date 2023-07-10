@@ -11,6 +11,8 @@ grandes telas: acima de 1440px
 
 :root {
     --main-color: #090;
+    --second-color: black;
+    --third-color: #7e11c6;
 }
 
 @media screen and (max-width: 768px) { /*Celular*/

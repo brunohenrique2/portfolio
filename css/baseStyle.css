@@ -14,6 +14,11 @@ html {
     scroll-behavior: smooth;
     
 }
+
+body {
+    background-color: aliceblue;
+}
+
 header {
     box-sizing: border-box;
     display: flex;
@@ -139,6 +144,7 @@ main section#local_projetos {
     justify-content: space-around;
     flex-direction: column;
     align-items: center;
+    background-color: white;
     width: 300px;
     height: 500px;
     margin: 10px;
@@ -163,27 +169,44 @@ main section#local_projetos {
     margin-bottom: 10px;
 }
 
-.projeto > div#texto_projeto p {
-    text-align: justify;
-    padding: 5px 0px;
+div#tecnologias {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.icon {
+    font-size: 50px;
+    transition: .3s;
+}
+
+.icon:hover {
+    color: var(--main-color);
+    transform: scale(1.2);
+    
 }
 
 .projeto > div#btn_projeto {
     display: flex;
     justify-content: space-around;
     width: 100%;
-    height: 30px;
-    padding-top: 10px;
+    height: 40px;
 }
 
 .projeto > div#btn_projeto button {
-    width: 120px;
-    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 40px;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bolder;
     border-radius: 30px;
     cursor: pointer;
+    gap: 20px;
+    padding-left: 40px;
 }
 
 .abrir_projeto {
@@ -194,22 +217,12 @@ main section#local_projetos {
 
 .abrir_projeto:hover {
     background-color: var(--main-color);
-    border: none;
     color: white;
 }
 
-.abrir_codigo {
-    background-color: transparent;
-    border: 2px solid var(--third-color);
-    color: var(--third-color);
+#open_arrow {
+    font-size: 30px;
 }
-
-.abrir_codigo:hover {
-    background-color: var(--third-color);
-    border: none;
-    color: white;
-}
-
 
 footer {
     background-color: var(--second-color);
