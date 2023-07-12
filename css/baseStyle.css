@@ -16,7 +16,7 @@ html {
 }
 
 body {
-    background-color: aliceblue;
+    background-color: rgb(245, 249, 253);
 }
 
 header {
@@ -60,10 +60,6 @@ a {
     display: none;
 }
 
-.logo {
-    width: 35px;
-}
-
 main {
     box-sizing: border-box;
     padding: 10px;
@@ -81,7 +77,10 @@ section#inicio {
 }
 
 div#foto {
-    background-color: gray;
+    background-image: url("../img/deku-icon.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 300px;
     height: 300px;
     border-radius: 20px;
@@ -102,6 +101,10 @@ div#redes-sociais {
     align-items: center;
     padding-top: 10px;
     gap: 10px;
+}
+
+div#redes-sociais i {
+    font-size: 40px;
 }
 
 main > section#sobre-mim {
@@ -161,15 +164,20 @@ main section#local_projetos {
     height: 250px;
     border-radius: 15px;
     box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+    transition: .5s;
 }
 
-.projeto > div#texto_projeto h3 {
-    text-align: center;
+.projeto > div#imagem_projeto:hover {
+    transform: scale(1.1);
+    border-radius: 0px;
+}
+
+.projeto h3 {
     text-transform: uppercase;
-    margin-bottom: 10px;
 }
 
-div#tecnologias {
+.projeto div#tecnologias {
+    width: 70%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -177,7 +185,8 @@ div#tecnologias {
 }
 
 .icon {
-    font-size: 50px;
+    color: var(--second-color);
+    font-size: 60px;
     transition: .3s;
 }
 
@@ -220,8 +229,29 @@ div#tecnologias {
     color: white;
 }
 
-#open_arrow {
+.abrir_projeto spam {
     font-size: 30px;
+}
+
+main > section#habilidades {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#habilidades div#skills_icon {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60vw;
+}
+
+section#habilidades div#skills_icon i {
+    margin: 10px 10px;
+    font-size: 100px;
 }
 
 footer {
@@ -231,5 +261,3 @@ footer {
     text-align: center;
     border-top: 10px solid var(--main-color);
 }
-
-
