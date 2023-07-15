@@ -77,6 +77,7 @@ h1 {
     text-align: center;
     font-size: 3em;
     font-family: var(--tittle-font);
+    margin-bottom: 50px;
 }
 
 section#inicio {
@@ -98,15 +99,11 @@ div#foto {
     border-radius: 20px;
 }
 
-.apt {
-    font-weight: bold;
-    font-size: 1.8em;
+section#inicio h1, h2 {
+    font-size: 2.5em;
+    margin: 0;
 }
 
-p#nome {
-    font-size: 3em;
-    font-weight: bold;
-}
 
 div#redes-sociais {
     display: flex;
@@ -141,7 +138,6 @@ main > section#sobre-mim > div#descricao > p {
 main > section#projetos {
     display: flex;
     justify-content: space-around;
-    height: calc(100vh + 70px);
     flex-flow: column;
 }
 

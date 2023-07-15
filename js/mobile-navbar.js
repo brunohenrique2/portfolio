@@ -8,6 +8,7 @@ btnMobile.addEventListener('click', toggleMenu)
 function toggleMenu() {
     const navList = document.getElementById('nav-list')
     navList.classList.toggle('active')
+
     if(btnMobile.innerText == "menu") {
         btnMobile.innerText = "close"
     }else {
