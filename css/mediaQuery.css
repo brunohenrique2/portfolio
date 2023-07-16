@@ -57,6 +57,12 @@ grandes telas: acima de 1440px
         justify-content: center;
     }
 
+    #nav-list a:hover {
+        background-color: var(--main-color);
+        border: none;
+    }
+    
+
     #nav-list.active {
         transform: translateX(0);
     }
