@@ -9,21 +9,22 @@
     box-sizing: border-box;
 }
 
-/* Variaveis das cores do Site */
+/* Variáveis das cores do Site */
 :root {
-    --main-color: #090;
-    --second-color: #000;
+    --main-color: #0a5c36;
+    --second-color: #1d2e28;
     --third-color: #7e11c6;
     --tittle-font: 'Press Start 2P', cursiva;
 }
 
 /* personalização da scrollbar */
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 5px;
 }
 
 ::-webkit-scrollbar-thumb {
     background-color: var(--main-color);
+    border-radius: 10px;
 
 }
 
@@ -148,7 +149,6 @@ main > section#sobre-mim {
     justify-content: space-around;
     align-items: center;
     height: 50vh;
-    margin-bottom: 20px;
 }
 
 main > section#sobre-mim > div#descricao {
@@ -250,7 +250,7 @@ div#conteudo_projeto .abrir_projeto:hover {
 
 }
 
-/* Ssessão Habilidades */
+/* Sessão Habilidades */
 
 main > section#habilidades {
     display: flex;
