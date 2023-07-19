@@ -11,17 +11,56 @@ grandes telas: acima de 1440px
 
 
 @media screen and (max-width: 768px) { /*Celular*/
+    #header {
+        height: 80px;
+        width: 100vw;
+        margin: 0px 0px 10px 0px;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+    }
+
     #btn-mobile {
         display: block;
-        font-size: 24px;
+        font-size: 40px;
     }
 
     #nav-list {
-        display: none;
+        position: absolute;
+        top: 90px;
+        right: 0px;
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        background-color: rgba(0, 0, 0, .8);
+        height: 40vh;
+        width: 15vw;
+        border-radius: 10px 0px 0px 10px;
+        transform: translateX(100%);
+        transition: .5s;
     }
-    /*
+
+    #nav-list .navLinks {
+        opacity: 0;
+        transition: .3s;
+    }
+
     #nav-list.active {
-        display: block;
+        transform: translateX(0);
     }
-    */
+
+    #nav-list.active .navLinks {
+        opacity: 1;
+    }
+
+    .navLinks:hover {
+        border-bottom: none;
+    }
+
+    main {
+        width: 90vw;
+    }
 }
