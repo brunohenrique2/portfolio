@@ -9,293 +9,75 @@
     box-sizing: border-box;
 }
 
-/* Variáveis das cores do Site */
 :root {
-    --main-color: #0a5c36;
-    --second-color: #1d2e28;
-    --third-color: #7e11c6;
-    --tittle-font: 'Press Start 2P', cursiva;
+    --color1: #27B2DB;
+    --color2: #E2714D;
 }
 
-/* personalização da scrollbar */
-::-webkit-scrollbar {
-    width: 5px;
-}
-
-::-webkit-scrollbar-thumb {
-    background-color: var(--main-color);
-    border-radius: 10px;
-
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background-color: rgb(0, 116, 0);
-}
-
-/* Personalização do Site */
-
-html {
-    scroll-behavior: smooth;
-    
-}
-
-/* Cabeçalho */
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--second-color);
-    height: 70px;
-    padding: 15px;
-    border-bottom: 10px solid var(--main-color);
-}
-
-#logo {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-/* Menu para Tablets e PCs */
-
-#nav-list {
-    display: flex;
-    align-items: center;
-    list-style-type: none;
-    gap: 10px;
+body {
+    background-image: url("../img/background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 a {
-    color: white;
     text-decoration: none;
 }
 
-#nav-list a {
+#header.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#header {
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    backdrop-filter: blur(35px);
+    width: 90vw;
+    height: 60px;
+    margin: 10px auto 10px auto;
     padding: 10px;
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
 }
 
-#nav-list a:hover {
-    border-bottom: 2px solid var(--main-color);
+#logo {
+    color: white;
 }
 
-/* Esconder o Botão do Menu Mobile */
+#nav-list {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.navLinks {
+    padding: 10px;
+    color: white;
+}
+
+.navLinks:hover {
+    color: var(--color1);
+    border-bottom: 2px solid var(--color1);
+
+}
 
 #btn-mobile {
     display: none;
 }
 
-/*Conteúdo Principal */
-
 main {
-    margin-top: 70px;
-}
-
-h1 {
-    text-align: center;
-    font-size: 3em;
-    font-family: var(--tittle-font);
-    margin-bottom: 50px;
-}
-
-/* Sessão Inicio do Site */
-
-section#inicio {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-around;
-    align-items: center;
-    height: 100vh;
-}
-
-div#foto {
-    background-image: url("../img/deku-icon.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    width: 300px;
-    height: 300px;
-    border-radius: 20px;
-}
-
-section#inicio h1, h2 {
-    font-size: 2.5em;
-    margin: 0;
-}
-
-
-div#redes-sociais {
-    display: flex;
-    align-items: center;
-    padding-top: 10px;
-    gap: 10px;
-}
-
-div#redes-sociais i {
-    color: var(--second-color);
-    font-size: 40px;
-}
-
-/* Sessão Sobre Mim */
-
-main > section#sobre-mim {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 50vh;
-}
-
-main > section#sobre-mim > div#descricao {
-    width: 600px;
-}
-
-/* Sessão Projetos */
-
-main > section#projetos {
-    display: flex;
-    justify-content: space-around;
-    flex-flow: column;
-}
-
-main section#local_projetos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.projeto {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    background-color: white;
-    width: 600px;
-    height: 300px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 15px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-}
-
-.projeto div#imagem_projeto {
-    background-image: url("../img/coming-soon.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 300px;
-    height: 300px;
-    margin-left: -10px;
-    border-radius: 15px;
-}
-
-.projeto div#conteudo_projeto {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    width: 300px;
-    height: 100%;
-}
-
-div#conteudo_projeto h2 {
-    font-size: 16px;
-    font-family: var(--tittle-font);
-    text-transform: uppercase;
-}
-
-div#tecnologias {
-    width: 80%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.icon {
-    font-size: 70px;
-    transition: .3s;
-}
-
-.icon:hover {
-    color: var(--main-color);
-    transform: scale(1.2);
-}
-
-div#conteudo_projeto .abrir_projeto {
-    background-color: transparent;
-    color: var(--main-color);
-    box-sizing: border-box;
-    font-size: 20px;
-    font-weight: bold;
-    text-transform: uppercase;
-    height: 40px;
-    width: 150px;
-    padding-left: 35px;
-    border: 3px solid var(--main-color);
-    border-radius: 25px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-}
-
-div#conteudo_projeto .abrir_projeto:hover {
-    cursor: pointer;
-    background-color: var(--main-color);
-    color: white;
-
-}
-
-/* Sessão Habilidades */
-
-main > section#habilidades {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-section#habilidades div#skills_icon {
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 60vw;
-}
-
-section#habilidades div#skills_icon i {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--second-color);
-    color: var(--main-color);
-    font-size: 70px;
-    width: 110px;
-    height: 110px;
-    margin: 5px;
-    border: 3px solid #1b1b1b;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 80vw;
+    margin: auto;
+    padding: 5px;
     border-radius: 10px;
-    transition: 1s;
 }
 
-section#habilidades div#skills_icon i:hover {
-    border-color: var(--main-color);
-    box-shadow: inset 0px 0px 5px var(--main-color);
-
-}
-
-/* Rodapé do Site */
-
-footer {
-    background-color: var(--second-color);
-    color: white;
+main section {
+    background-color: white;
     padding: 10px;
-    text-align: center;
-    border-top: 10px solid var(--main-color);
+    border-radius: 10px;
 }

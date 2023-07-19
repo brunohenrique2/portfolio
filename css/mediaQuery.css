@@ -9,105 +9,19 @@ desktop: 1024px até 1440px
 grandes telas: acima de 1440px
 */
 
-:root {
-    --main-color: #090;
-    --second-color: black;
-    --third-color: #7e11c6;
-}
 
 @media screen and (max-width: 768px) { /*Celular*/
     #btn-mobile {
         display: block;
-        color: white;
-        font-size: 40px;
-    }
-    
-    #nav-list {
-        box-sizing: border-box;
-        background-color: var(--second-color);
-        border-left: 10px solid var(--main-color);
-        position: absolute;
-        top: 60px;
-        right: 0px;
-        width: 50vw;
-        height: calc(100vh - 60px);
-        display: flex;
-        justify-content: space-around;
-        flex-direction: column;
-        align-items: center;
-        transform: translateX(100%);
-        transition: transform .3s ease-in;
-    }
-
-    #nav-list li {
-        height: 25%;
-        width: 100%;
-    }
-
-    #nav-list a {
         font-size: 24px;
-        text-align: center;
-        padding: 0;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
     }
 
-    #nav-list a:hover {
-        background-color: var(--main-color);
-        border: none;
+    #nav-list {
+        display: none;
     }
-    
-
+    /*
     #nav-list.active {
-        transform: translateX(0);
+        display: block;
     }
-
-    h1 {
-        font-size: 2em;
-    }
-
-    main > section#inicio {
-        flex-direction: column;
-    }
-
-    div#foto {
-        width: 250px;
-        height: 250px;
-    }
-
-    div#hello h1, h2 {
-        text-align: center;
-        font-size: 1.9em;
-    }
-
-    div#redes-sociais {
-        justify-content: center;
-    }
-
-    main > section#sobre-mim > div#descricao {
-        padding: 10px;
-        width: 300px;
-    }
-
-    .projeto {
-        flex-direction: column;
-        width: 300px;
-        height: 500px;
-        margin: 10px;
-    }
-
-    .projeto div#imagem_projeto {
-        width: 300px;
-        height: 250px;
-        margin: -10px 0px 0px 0px;
-    }
-
-    .projeto div#conteudo_projeto {
-        height: 250px;
-    }
+    */
 }
