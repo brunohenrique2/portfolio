@@ -26,6 +26,8 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
+    height: 100vh;
+    overflow-x: hidden;
 }
 
 a {
@@ -50,9 +52,14 @@ a {
     border-radius: 10px;
 }
 
-#logo {
-    color: white;
-    font-size: 24px;
+#logo img {
+    width: 30px;
+    height: 30px;
+    transition: .3s ease;
+}
+
+#logo img:hover {
+    transform: scale(.8);
 }
 
 #nav-list {
@@ -90,34 +97,43 @@ main section {
     border-radius: 10px;
 }
 
-#inicio {
+main, #inicio, #sobre-mim, #projetos, #habilidades, footer {
+    display: none;
+}
+
+.loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
-    flex-flow: row-reverse;
-    height: 50vh;
+    background-color: black;
+    transition: opacity .75s, visibility .75s;
 }
 
-#inicio #foto {
-    background-color: red;
-    width: 240px;
-    height: 240px;
-    border-radius: 10px;
+.loader-hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
-#apresentacao h1 {
-    font-family: var(--font2);
-    font-size: 28px;
+.loader::after {
+    content: "";
+    width: 75px;
+    height: 75px;
+    border: 15px solid #dddddd;
+    border-top-color: var(--color1);
+    border-radius: 50%;
+    animation: loading .75s ease infinite;
 }
 
-#redes-sociais i {
-    font-size: 35px;
-    color: black;
-    margin-right: 5px;
-    transition: .3s;
-}
-
-#redes-sociais i:hover {
-    color: var(--color1);
-    transform: scale(1.2);
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+    to {
+        transform: rotate(1turn);
+    }
 }
