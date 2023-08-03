@@ -131,9 +131,40 @@ main section {
     color: var(--color1);
 }
 
+#inicio .container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 10px 0px 0px 10px;
+    border-radius: 10px;
+    height: calc(100% - 6vh);
+}
+
 .sidebar {
     width: 30vh;
-    height: calc(100% - 8vh);
+    height: 100%;
+    padding: 10px 10px 0px 0px;
+}
+
+.sidebar ul li {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    padding: 10px;
+    gap: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+}
+
+.sidebar ul li:hover {
+    cursor: pointer;
+}
+
+.content {
+    width: 100vh;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: 10px 0px 10px 0px;
 }
 
 #sobre-mim, #projetos, #habilidades, footer {
