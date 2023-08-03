@@ -72,6 +72,6 @@ grandes telas: acima de 1440px
     }
 
     main {
-        width: 90vw;
+        height: calc(100vh - 100px);
     }
 }

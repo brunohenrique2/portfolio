@@ -14,10 +14,7 @@
     padding: 0;
     font-family: var(--font1), Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-}
-
-html {
-    scroll-behavior: smooth;
+    list-style-type: none;
 }
 
 body {
@@ -27,7 +24,7 @@ body {
     background-size: cover;
     overflow-x: hidden;
     height: 100vh;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 a {
@@ -43,7 +40,7 @@ a {
 #header {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
-    backdrop-filter: blur(35px);
+    backdrop-filter: blur(30px);
     width: 90vw;
     height: 60px;
     margin: 10px auto 10px auto;
@@ -63,7 +60,6 @@ a {
 }
 
 #nav-list {
-    list-style-type: none;
     display: flex;
     gap: 10px;
 }
@@ -84,20 +80,63 @@ a {
 }
 
 main {
-    background-color: rgba(255, 255, 255, 0.9);
-    width: 80vw;
     margin: auto;
-    padding: 5px;
-    border-radius: 10px;
+    height: calc(100vh - 80px);
 }
 
 main section {
-    background-color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
     padding: 10px;
+    border: 1px solid var(--color1);
     border-radius: 10px;
+    backdrop-filter: blur(10px);
+
 }
 
-main, #inicio, #sobre-mim, #projetos, #habilidades, footer {
+#inicio {
+    width: 50vw;
+    height: 60vh;
+    margin: auto;
+}
+
+#inicio header {
+    height: 6vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#inicio .screen-name {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#inicio header .screen-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+#inicio .screen-controls span {
+    font-size: 24px;
+}
+
+#inicio .screen-controls span:hover {
+    cursor: pointer;
+    color: var(--color1);
+}
+
+.sidebar {
+    width: 30vh;
+    height: calc(100% - 8vh);
+}
+
+#sobre-mim, #projetos, #habilidades, footer {
     display: none;
 }
 
