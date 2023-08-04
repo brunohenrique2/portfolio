@@ -17,7 +17,7 @@
             <ul id="nav-list">
                 <li>
                     <a class="navLinks" href="#">
-                        <span id="btnHome" class="material-icons">home</span>
+                        <span class="material-icons">home</span>
                     </a>
                 </li>
                 <li>
@@ -27,20 +27,20 @@
                 </li>
                 <li>
                     <a class="navLinks" href="#">
-                        <span class="material-icons">web</span>
+                        <span id="btnProjetos" class="material-icons">web</span>
                     </a>
                 </li>
                 <li>
                     <a class="navLinks" href="#">
-                        <span class="material-icons">bolt</span>
+                        <span id="btnHabilidades" class="material-icons">bolt</span>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="inicio">
-            <header>
+        <section id="inicio" class="screen">
+            <header class="screen-header">
                 <div class="screen-name">
                     <span class="material-icons">home</span>
                     Home
@@ -48,14 +48,14 @@
                 <div class="screen-controls">
                     <span class="material-icons">minimize</span>
                     <span class="material-icons">fullscreen</span>
-                    <span id="screenclose" class="material-icons">close</span>
+                    <span class="material-icons screenclose">close</span>
                 </div>
             </header>
             <div class="container">
                 <div class="sidebar">
                     <ul>
                         <li>
-                            <span id="screenclose" class="material-icons">settings</span>
+                            <span class="material-icons">settings</span>
                             Configurações
                         </li>
                         <li>
@@ -63,7 +63,7 @@
                             Creditos
                         </li>
                         <li>
-                            <span id="screenclose" class="material-icons">power_settings_new</span>
+                            <span class="material-icons">power_settings_new</span>
                             Power
                         </li>
                     </ul>
@@ -72,8 +72,18 @@
                 </div>
             </div>
         </section>
-        <section id="sobre-mim">
-            <h1>Sobre Mim</h1>
+        <section id="sobre-mim" class="screen">
+            <header class="screen-header">
+                <div class="screen-name">
+                    <span id="name" class="material-icons">face</span>
+                    Sobre Mim
+                </div>
+                <div class="screen-controls">
+                    <span class="material-icons">minimize</span>
+                    <span class="material-icons">fullscreen</span>
+                    <span class="material-icons screenclose">close</span>
+                </div>
+            </header>
             <div id="descricao">
                 <p>
                     Meu nome é Bruno Henrique, aos meus 14 anos tive meu primeiro contato com programação através do curso de Python do Curso em Video, meu interesse por tecnologia e a curiosidade de saber como as coisas funcionavam me fez conhecer esse universo.

@@ -1,19 +1,22 @@
-var btnHome = document.querySelector('span#btnHome')
-var btnClose = document.querySelector('span#screenclose')
-var inicioScreen = document.querySelector('section#inicio')
-console.log(btnClose, inicioScreen, btnHome)
+const navLinks = document.querySelectorAll('a.navLinks')
+const screen = document.querySelectorAll('section.screen')
+const btnClose = document.querySelectorAll('span.screenclose')
 
-btnClose.addEventListener('click', closeWindow)
-btnHome.addEventListener('click', homeWindow)
-
-function homeWindow() {
-    if(inicioScreen.style.display == 'none') {
-        inicioScreen.style.display = 'block'
-    }else if(inicioScreen.style.display == 'block') {
-        inicioScreen.style.display = 'none'
-    }
+//faz o botão X da janela correspondente, fecha-la
+for(let i=0; i<btnClose.length; i++) {
+    btnClose[i].addEventListener('click', () => {
+            screen[i].style.display = 'none'
+        console.log(i)
+    })
 }
 
-function closeWindow () {
-    inicioScreen.style.display = 'none'
+for(let i=0; i<navLinks.length; i++) {
+    navLinks[i].addEventListener('click', () => {
+            if(screen[i].style.display == 'block') {
+                screen[i].style.display = 'none'
+            }else if(screen[i].style.display == 'none') {
+                screen[i].style.display = 'block'
+            }
+        console.log(i)
+    })
 }
