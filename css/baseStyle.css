@@ -81,7 +81,21 @@ a {
 
 main {
     margin: auto;
+    padding-bottom: 10px;
     height: calc(100vh - 80px);
+    overflow-y: auto;
+}
+/*ocultando barra de rolagem(maioria dos navegadores)*/
+main::-webkit-scrollbar {
+    width: 0! important
+}
+
+main {
+    overflow: -moz-scrollbars-none; 
+}
+
+main {
+    -ms-overflow-style: none; 
 }
 
 main section {
@@ -168,10 +182,6 @@ main section {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 10px 0px 10px 0px;
     margin: 10px -10px 0px 0px;
-}
-
-#projetos, #habilidades, footer {
-    display: none;
 }
 
 .loader {
