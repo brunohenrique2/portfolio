@@ -31,22 +31,26 @@ a {
     text-decoration: none;
 }
 
-#header.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 #header {
     background-color: rgba(0, 0, 0, 0.3);
     color: white;
     backdrop-filter: blur(30px);
     width: 90vw;
     height: 60px;
-    margin: 10px auto 10px auto;
+    margin: auto;
     padding: 10px;
     border: 5px solid rgba(0, 0, 0, 0.3);
     border-radius: 10px;
+    position: absolute;
+    left: 3%;
+    right: 3%;
+    bottom: 10px;
+}
+
+#header.container {
+    display: flex;
+    justify-content: left;
+    align-items: center;
 }
 
 #logo img {
@@ -81,7 +85,7 @@ a {
 
 main {
     margin: auto;
-    padding-bottom: 10px;
+    padding-top: 10px;
     height: calc(100vh - 80px);
     overflow-y: auto;
 }
