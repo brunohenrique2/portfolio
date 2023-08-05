@@ -1,6 +1,7 @@
 const navLinks = document.querySelectorAll('a.navLinks')
 const screen = document.querySelectorAll('section.screen')
 const btnClose = document.querySelectorAll('span.screenclose')
+let offSetX, offSetY
 
 for(let i=0; i<btnClose.length; i++) {
     screen[i].style.display = 'none'
@@ -21,6 +22,26 @@ for(let i=0; i<navLinks.length; i++) {
             screen[i].style.display = 'none'
         }else if(screen[i].style.display == 'none') {
             screen[i].style.display = 'block'
+
         }
+    })
+}
+
+//movimentando as janelas
+
+for(let i=0; i<screen.length; i++) {
+    const move = (e) => {
+        screen[i].style.left = `${e.clientX - offSetX}px`
+        screen[i].style.top = `${e.clientY - offSetY}px`
+    }
+
+    screen[i].addEventListener("mousedown", (e) => {
+        offSetX = e.clientX - screen[i].offsetLeft
+        offSetY = e.clientY - screen[i].offsetTop
+        document.addEventListener("mousemove", move)
+    })
+
+    document.addEventListener("mouseup", () => {
+        document.removeEventListener("mousemove", move)
     })
 }
