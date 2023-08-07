@@ -17,13 +17,13 @@ grandes telas: acima de 1440px
         left: 0;
         display: flex;
         justify-content: center;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: rgba(0, 0, 0, .8);
         width: 100vw;
         height: 60px;
         border: none;
         border-radius: 0;
-        backdrop-filter: blur(5px);
         padding: 10px;
+        backdrop-filter: blur(0px);
     }
 
     #logo img {

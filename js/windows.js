@@ -5,7 +5,7 @@ const screen = document.querySelectorAll('section.screen')
 const btnClose = document.querySelectorAll('span.screenclose')
 let offSetX, offSetY
 
-btnMobile.addEventListener('click', toggleMenu)
+btnMobile.addEventListener('touchend', toggleMenu)
 
 //Essa função adiciona/remove a classe active do menu para abrir/fechar no mobile
 function toggleMenu() { 
@@ -27,7 +27,7 @@ for(let i=0; i<screen.length; i++) {
 
 //fechar o menu mobile ao clicar em qualquer botão
 for(let i=0; i<navLinks.length; i++) {
-    navLinks[i].addEventListener('click', () => {
+    navLinks[i].addEventListener('touchend', () => {
         navList.classList.toggle('active')
     })
 }
