@@ -2,6 +2,7 @@ const btnMobile = document.getElementById('btn-mobile')
 const navList = document.getElementById('nav-list')
 const navLinks = document.querySelectorAll('a.navLinks')
 const screen = document.querySelectorAll('section.screen')
+const screenHeader = document.querySelectorAll('header.screen-header')
 const btnClose = document.querySelectorAll('span.screenclose')
 let offSetX, offSetY
 
@@ -20,8 +21,13 @@ function toggleMenu() {
     }
 }
 
+//define a janela de introdução para block/visivel
+for(let i=0; i<1; i++) {
+    screen[i].style.display = 'block'
+}
+
 //define todas as telas para display none
-for(let i=0; i<screen.length; i++) {
+for(let i=1; i<screen.length; i++) {
     screen[i].style.display = 'none'
 }
 
@@ -29,6 +35,12 @@ for(let i=0; i<screen.length; i++) {
 for(let i=0; i<navLinks.length; i++) {
     navLinks[i].addEventListener('touchend', () => {
         navList.classList.toggle('active')
+        //troca o icon menu hamburger ou X quando o menu estiver aberto/fechado
+        if(btnMobile.innerText == "menu") {
+            btnMobile.innerText = "close"
+        }else {
+            btnMobile.innerText = "menu"
+        }
     })
 }
 
@@ -52,14 +64,13 @@ for(let i=0; i<navLinks.length; i++) {
 }
 
 //movimentando as janelas
-
 for(let i=0; i<screen.length; i++) {
     const move = (e) => {
         screen[i].style.left = `${e.clientX - offSetX}px`
         screen[i].style.top = `${e.clientY - offSetY}px`
     }
 
-    screen[i].addEventListener("mousedown", (e) => {
+    screenHeader[i].addEventListener("mousedown", (e) => {
         offSetX = e.clientX - screen[i].offsetLeft
         offSetY = e.clientY - screen[i].offsetTop
         document.addEventListener("mousemove", move)

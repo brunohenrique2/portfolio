@@ -9,12 +9,17 @@
     <link rel="stylesheet" href="css/mediaQuery.css">
     <title>Portfolio</title>
 </head>
-<body>
+<body id="body">
     <header id="header" class="container">
         <a id="logo" href="https://github.com/brunohenrique2" target="_blank"><img src="img/logo.png"></a>
         <nav id="nav">
             <span id="btn-mobile" class="material-icons mobile-menu">menu</span>
             <ul id="nav-list">
+                <li>
+                    <a class="navLinks" href="#">
+                        <span id="btnHabilidades" class="material-icons">article</span>
+                    </a>
+                </li>
                 <li>
                     <a class="navLinks" href="#">
                         <span class="material-icons">home</span>
@@ -39,6 +44,22 @@
         </nav>
     </header>
     <main>
+        <section id="introdução" class="screen">
+            <header class="screen-header">
+                <div class="screen-name">
+                    <span class="material-icons">article</span>
+                    Introdução
+                </div>
+                <div class="screen-controls">
+                    <span class="material-icons">minimize</span>
+                    <span class="material-icons">fullscreen</span>
+                    <span class="material-icons screenclose">close</span>
+                </div>
+            </header>
+            <main>
+
+            </main>
+        </section>
         <section id="inicio" class="screen">
             <header class="screen-header">
                 <div class="screen-name">
@@ -68,7 +89,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="content">
+                <div class="conteudo">
                 </div>
             </div>
         </section>
@@ -84,13 +105,23 @@
                     <span class="material-icons screenclose">close</span>
                 </div>
             </header>
-            <div id="descricao">
-                <p>
-                    Meu nome é Bruno Henrique, aos meus 14 anos tive meu primeiro contato com programação através do curso de Python do Curso em Video, meu interesse por tecnologia e a curiosidade de saber como as coisas funcionavam me fez conhecer esse universo.
-                </p>
-                <p>
-                    Meu foco inicial era desenvolver jogos, mas a medida que fui me especializando e me formando na area, decidi juntar conhecimento nas aplicações Web, focando no Frontend e posteriormente Backend.
-                </p>
+            <div class="conteudo">
+                <div id="imagem">
+                    <img src="img/deku-icon.png">
+                </div>
+                <div id="descricao">
+                    <p>
+                        Meu nome é Bruno Henrique, aos meus 14 anos tive meu primeiro contato com programação através do curso de Python do Curso em Video, meu interesse por tecnologia e a curiosidade de saber como as coisas funcionavam me fez conhecer esse universo.
+                    </p>
+                    <p>
+                        Meu foco inicial era desenvolver jogos, mas a medida que fui me especializando e me formando na area, decidi juntar conhecimento nas aplicações Web, focando no Frontend e posteriormente Backend.
+                    </p>
+                    <div id="redes-sociais">
+                        <a href="http://" target="_blank" rel="noopener noreferrer"><button id="btnGithub" class="btnRedes">Github</button></a>
+                        <button id="btnLinkedin" class="btnRedes">Linkedin</button>
+                    </div>
+
+                </div>
             </div>
         </section>
         <section id="projetos" class="screen">
@@ -105,24 +136,8 @@
                     <span class="material-icons screenclose">close</span>
                 </div>
             </header>
-            <section id="local_projetos">
+            <section id="projetos">
                 <div class="projeto">
-                    <div id="imagem_projeto"></div>
-                    <div id="conteudo_projeto">
-                        <h2 class="titulo_projetos">Titulo do Projeto</h2>
-                        <div id="tecnologias">
-                            <i class="fa-brands fa-html5 icon"></i>
-                            <i class="fa-brands fa-css3-alt icon"></i>
-                            <i class="fa-brands fa-js-square icon"></i>
-                        </div>
-                        <button class="abrir_projeto">
-                            Abrir
-                            <span class="material-icons"> arrow_forward_ios</span>
-                        </button>
-                    </div>
-                </div>
-                <div class="projeto">
-                    <div id="imagem_projeto"></div>
                     <div id="conteudo_projeto">
                         <h2 class="titulo_projetos">Titulo do Projeto</h2>
                         <div id="tecnologias">
