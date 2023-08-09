@@ -9,6 +9,13 @@ desktop: 1024px até 1440px
 grandes telas: acima de 1440px
 */
 
+:root {
+    --color1: #27B2DB;
+    --color2: #F39056;
+    --color3: black;
+    --font1: 'Roboto';
+    --font2: 'Press Start 2P';
+}
 
 @media screen and (max-width: 768px) { /*Celular*/
     #header {
@@ -87,11 +94,12 @@ grandes telas: acima de 1440px
     }
 
     .screen {
+        background-color: var(--color3);
         width: 100vw;
         height: calc(100vh - 60px);
         border: 0;
         border-radius: 0;
-        backdrop-filter: blur(5px);
+        backdrop-filter: blur(0px);
     }
 
     .screen .screen-header {

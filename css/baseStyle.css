@@ -5,6 +5,7 @@
 :root {
     --color1: #27B2DB;
     --color2: #F39056;
+    --color3: #0f0f0f;
     --font1: 'Roboto';
     --font2: 'Press Start 2P';
 }
@@ -94,7 +95,7 @@ main section {
     padding: 10px;
     border: 1px solid var(--color1);
     border-radius: 10px;
-    backdrop-filter: blur(10px);
+
 
 }
 
@@ -109,7 +110,7 @@ main section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    overflow-y: auto;
+    backdrop-filter: blur(10px);
 }
 
 .screen .screen-header {
