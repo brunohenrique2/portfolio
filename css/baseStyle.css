@@ -109,6 +109,7 @@ main section {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    overflow-y: auto;
 }
 
 .screen .screen-header {
@@ -118,8 +119,7 @@ main section {
     align-items: center;
     margin: -10px 0px 0px 0px;
 }
-
-.screen .screen-name {
+.screen .screen-title {
     display: flex;
     align-items: center;
     gap: 10px;
