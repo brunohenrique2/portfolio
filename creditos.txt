@@ -1,5 +1,12 @@
-linkedin icon:
-<a href="https://www.flaticon.com/free-icons/linkedin" title="linkedin icons">Linkedin icons created by riajulislam - Flaticon</a>
+background-light: https://br.pinterest.com/pin/759208449711697105/
 
-github icon: 
-<a href="https://www.flaticon.com/free-icons/github" title="github icons">Github icons created by riajulislam - Flaticon</a>
+background-dark: https://wallpapersden.com/night-mountains-summer-illustration-wallpaper/2932x2932/
+
+background-projeto-default: https://pin.it/6J7dZll
+
+
+minhas redes sociais:
+
+github: https://github.com/brunohenrique2
+
+linkedin: https://www.linkedin.com/in/brunoheriquedev/

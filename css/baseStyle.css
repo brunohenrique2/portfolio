@@ -1,13 +1,13 @@
 /* Algumas definições Padrão */
 @charset "UTF-8";
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
 :root {
     --color1: #27B2DB;
     --color2: #F39056;
     --color3: #0f0f0f;
     --font1: 'Roboto';
-    --font2: 'Press Start 2P';
+    --font2: 'Black Ops One', cursive;
 }
 
 * {
@@ -19,14 +19,17 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
-    background-image: url("../img/background.jpg");
+    background-image: url('../img/background-light.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     overflow-x: hidden;
     height: 100vh;
-    overflow: hidden;
 }
 
 #header {
@@ -49,13 +52,14 @@ body {
 #header.container {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0px;
 }
 
 #logo img {
-    width: 24px;
+    width: 34px;
     height: 24px;
-    transition: .3s ease;
+    padding-right: 10px;
+    transition: .3s ease-in;
 }
 
 #logo img:hover {
@@ -66,12 +70,18 @@ body {
     display: flex;
 }
 
-.navLinks {
+.btnNav {
+    background-color: transparent;
+    border: none;
     padding: 0px 10px;
     color: white;
 }
 
-.navLinks:hover {
+.btnNav:hover {
+    cursor: pointer;
+}
+
+.btnNav:active {
     color: var(--color1);
     border-bottom: 2px solid var(--color1);
 
@@ -83,160 +93,11 @@ body {
 
 main {
     position: relative;
-    display: flex;
-    flex-wrap: wrap;
     width: 100%;
     height: 100vh;
 }
 
-main section {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 10px;
-    border: 1px solid var(--color1);
-    border-radius: 10px;
-
-
-}
-
-
 /*css base das janelas*/
-.screen {
-    display: block;
-    width: 50vw;
-    height: 60vh;
-    margin: auto;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    backdrop-filter: blur(10px);
-}
-
-.screen .screen-header {
-    height: 6vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: -10px 0px 0px 0px;
-}
-.screen .screen-title {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.screen-header .screen-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 15px;
-}
-
-.screen-header .screen-controls span {
-    font-size: 24px;
-}
-
-.screen-header .screen-controls span:hover {
-    cursor: pointer;
-    color: var(--color1);
-}
-
-.screen .container {
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    border-radius: 10px;
-    height: calc(100% - 6vh);
-}
-
-.sidebar {
-    width: 30vh;
-    height: 100%;
-    padding: 10px 10px 0px 0px;
-}
-
-.sidebar ul li {
-    display: flex;
-    align-items: center;
-    margin-top: 10px;
-    padding: 10px;
-    gap: 10px;
-    background: rgba(0, 0, 0, 0.6);
-    border-radius: 10px;
-}
-
-.sidebar ul li:hover {
-    cursor: pointer;
-}
-
-#inicio .conteudo {
-    width: 100vh;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 10px 0px 10px 0px;
-    margin: 20px -10px 10px 0px;
-}
-
-#sobre-mim {
-    display: flex;
-}
-
-#sobre-mim .conteudo {
-    display: flex;
-    align-items: center;
-    height: calc(100% - 6vh);
-}
-
-.conteudo > #imagem > img {
-    width: 100%;
-    height: 100%;
-    border-radius: 10px;
-}
-
-.conteudo > #descricao{
-    text-align: justify;
-    line-height: 24px;
-}
-
-#descricao > #redes-sociais {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 10px;
-}
-
-#redes-sociais .btnRedes {
-    width: 120px;
-    height: 40px;
-    border-radius: 10px;
-    background-color: transparent;
-    font-size: 1.2em;
-    font-weight: bolder;
-    cursor: pointer;
-}
-
-#redes-sociais #btnGithub {
-    border: 2px solid var(--color2);
-    color: var(--color2);
-}
-
-#redes-sociais #btnGithub:hover {
-    background-color: var(--color2);
-    border: 2px solid var(--color2);
-    color: white;
-}
-
-#redes-sociais #btnLinkedin {
-    border: 2px solid var(--color1);
-    color: var(--color1);
-}
-
-#redes-sociais #btnLinkedin:hover {
-    background-color: var(--color1);
-    border: 2px solid var(--color1);
-    color: white;
-}
-
 
 
 .loader {

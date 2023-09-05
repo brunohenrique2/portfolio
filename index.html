@@ -16,170 +16,97 @@
             <span id="btn-mobile" class="material-icons mobile-menu">menu</span>
             <ul id="nav-list">
                 <li>
-                    <a class="navLinks" href="#">
-                        <span id="btnHabilidades" class="material-icons">article</span>
+                    <a href="#inicio">
+                        <button class="btnNav"><span class="material-icons">home</span></button>
                     </a>
                 </li>
                 <li>
-                    <a class="navLinks" href="#">
-                        <span class="material-icons">home</span>
+                    <a href="#sobre-mim">
+                        <button class="btnNav"><span class="material-icons">face</span></button>
                     </a>
                 </li>
                 <li>
-                    <a class="navLinks" href="#">
-                        <span class="material-icons">face</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="navLinks" href="#">
-                        <span id="btnProjetos" class="material-icons">web</span>
-                    </a>
-                </li>
-                <li>
-                    <a class="navLinks" href="#">
-                        <span id="btnHabilidades" class="material-icons">bolt</span>
+                    <a href="#projetos">
+                        <button class="btnNav"><span id="btnProjetos" class="material-icons">web</span></button>
                     </a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <section id="introdução" class="screen">
-            <header class="screen-header">
-                <div class="screen-title">
-                    <span class="material-icons">article</span>
-                    Introdução
-                </div>
-                <div class="screen-controls">
-                    <span class="material-icons">minimize</span>
-                    <span class="material-icons">fullscreen</span>
-                    <span class="material-icons screenclose">close</span>
-                </div>
-            </header>
-            <main>
-                <div id="texto">
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis perspiciatis cupiditate eius optio voluptatem sint facere, quia sed, earum ipsum velit, vel veritatis suscipit nesciunt soluta inventore libero alias!
-                    </p>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis perspiciatis cupiditate eius optio voluptatem sint facere, quia sed, earum ipsum velit, vel veritatis suscipit nesciunt soluta inventore libero alias!
-                    </p>
-                    <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum officiis perspiciatis cupiditate eius optio voluptatem sint facere, quia sed, earum ipsum velit, vel veritatis suscipit nesciunt soluta inventore libero alias!
-                    </p>
-                </div>
-            </main>
+        <section id="inicio">
+            <div id="painel">
+                <span id="timer">12:00</span>
+                <span id="btnThemeMode" class="material-icons">light_mode</span>
+            </div>
+            <div id="imagem"></div>
+            <h1>WEB DEVELOPER</h1>
+            <div id="resumo">
+                <p>
+                    Olá, eu sou o Bruno Henrique! Sou desenvolvedor web que buscar
+                    oferecer o melhor UI/UX em meus sites!
+                </p>
+            </div>
+            <div id="skills">
+                <i class="fa-brands fa-html5 icon"></i>
+                <i class="fa-brands fa-css3-alt icon"></i>
+                <i class="fa-brands fa-js-square icon"></i>
+            </div>
         </section>
-        <section id="inicio" class="screen">
-            <header class="screen-header">
-                <div class="screen-title">
-                    <span class="material-icons">home</span>
-                    Home
-                </div>
-                <div class="screen-controls">
-                    <span class="material-icons">minimize</span>
-                    <span class="material-icons">fullscreen</span>
-                    <span class="material-icons screenclose">close</span>
-                </div>
-            </header>
-            <div class="container">
-                <div class="sidebar">
-                    <ul>
-                        <li>
-                            <span class="material-icons">settings</span>
-                            Configurações
-                        </li>
-                        <li>
-                            <span class="material-icons">link</span>
-                            Creditos
-                        </li>
-                        <li>
-                            <span class="material-icons">power_settings_new</span>
-                            Power
-                        </li>
-                    </ul>
-                </div>
-                <div class="conteudo">
+        <section id="sobre-mim">
+            <div id="descricao">
+                <p>
+                    Meu nome é Bruno Henrique, aos meus 14 anos tive meu primeiro contato com programação através do curso de Python do Curso em Video, meu interesse por tecnologia e a curiosidade de saber como as coisas funcionavam me fez conhecer esse universo.
+                </p>
+                <p>
+                    Meu foco inicial era desenvolver jogos, mas a medida que fui me especializando e me formando na area, decidi juntar conhecimento nas aplicações Web, focando no Frontend e posteriormente Backend.
+                </p>
+                <div id="redes-sociais">
+                    <a href="https://github.com/brunohenrique2" target="_blank" rel="noopener noreferrer"><button id="btnGithub" class="btnRedes">Github</button></a>
+                    <a href="https://www.linkedin.com/in/brunoheriquedev/" target="_blank" rel="noopener noreferrer"><button id="btnLinkedin" class="btnRedes">Linkedin</button></a>
                 </div>
             </div>
         </section>
-        <section id="sobre-mim" class="screen">
-            <header class="screen-header">
-                <div class="screen-title">
-                    <span id="name" class="material-icons">face</span>
-                    Sobre Mim
-                </div>
-                <div class="screen-controls">
-                    <span class="material-icons">minimize</span>
-                    <span class="material-icons">fullscreen</span>
-                    <span class="material-icons screenclose">close</span>
-                </div>
-            </header>
-            <div class="conteudo">
-                <div id="imagem">
-                    <img src="img/deku-icon.png">
-                </div>
-                <div id="descricao">
-                    <p>
-                        Meu nome é Bruno Henrique, aos meus 14 anos tive meu primeiro contato com programação através do curso de Python do Curso em Video, meu interesse por tecnologia e a curiosidade de saber como as coisas funcionavam me fez conhecer esse universo.
-                    </p>
-                    <p>
-                        Meu foco inicial era desenvolver jogos, mas a medida que fui me especializando e me formando na area, decidi juntar conhecimento nas aplicações Web, focando no Frontend e posteriormente Backend.
-                    </p>
-                    <div id="redes-sociais">
-                        <a href="http://" target="_blank" rel="noopener noreferrer"><button id="btnGithub" class="btnRedes">Github</button></a>
-                        <button id="btnLinkedin" class="btnRedes">Linkedin</button>
+        <section id="projetos">
+            <div class="projeto">
+                <div id="projeto_conteudo">
+                    <h1>Titulo do Projeto</h1>
+                    <div class="tecnologias">
+                        <i class="fa-brands fa-html5 icon"></i>
+                        <i class="fa-brands fa-css3-alt icon"></i>
+                        <i class="fa-brands fa-js-square icon"></i>
                     </div>
-
-                </div>
-            </div>
-        </section>
-        <section id="projetos" class="screen">
-            <header class="screen-header">
-                <div class="screen-title">
-                    <span class="material-icons">web</span>
-                    Projetos
-                </div>
-                <div class="screen-controls">
-                    <span class="material-icons">minimize</span>
-                    <span class="material-icons">fullscreen</span>
-                    <span class="material-icons screenclose">close</span>
-                </div>
-            </header>
-            <section id="projetos">
-                <div class="projeto">
-                    <div id="conteudo_projeto">
-                        <h2 class="titulo_projetos">Titulo do Projeto</h2>
-                        <div id="tecnologias">
-                            <i class="fa-brands fa-html5 icon"></i>
-                            <i class="fa-brands fa-css3-alt icon"></i>
-                            <i class="fa-brands fa-js-square icon"></i>
-                        </div>
-                        <button class="abrir_projeto">
+                    <div class="projeto_actions">
+                        <button class="projeto_abrir">
                             Abrir
                             <span class="material-icons"> arrow_forward_ios</span>
                         </button>
+                        <button class="projeto_codigo">
+                            Codigo
+                            <span class="material-icons">code</span>
+                        </button>
                     </div>
                 </div>
-            </section>
-        </section>
-        <section id="habilidades" class="screen">
-            <header class="screen-header">
-                <div class="screen-title">
-                    <span class="material-icons">bolt</span>
-                    Habilidades
+            </div>
+            <div class="projeto">
+                <div id="projeto_conteudo">
+                    <h1>Titulo do Projeto</h1>
+                    <div class="tecnologias">
+                        <i class="fa-brands fa-html5 icon"></i>
+                        <i class="fa-brands fa-css3-alt icon"></i>
+                        <i class="fa-brands fa-js-square icon"></i>
+                    </div>
+                    <div class="projeto_actions">
+                        <button class="projeto_abrir">
+                            Abrir
+                            <span class="material-icons"> arrow_forward_ios</span>
+                        </button>
+                        <button class="projeto_codigo">
+                            Codigo
+                            <span class="material-icons">code</span>
+                        </button>
+                    </div>
                 </div>
-                <div class="screen-controls">
-                    <span class="material-icons">minimize</span>
-                    <span class="material-icons">fullscreen</span>
-                    <span class="material-icons screenclose">close</span>
-                </div>
-            </header>
-            <div id="skills_icon">
-                <abbr title="HyperText Markup Language"><i class="fa-brands fa-html5"></i></abbr>
-                <abbr title="Cascading Style Sheets"><i class="fa-brands fa-css3-alt"></i></abbr>
-                <abbr title="JavaScript"><i class="fa-brands fa-js-square"></i></abbr>
-                <abbr title="Github"><i class="fab fa-github-square"></i></abbr>
             </div>
         </section>
     </main>

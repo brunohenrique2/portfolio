@@ -1,82 +1,25 @@
-const btnMobile = document.getElementById('btn-mobile')
-const navList = document.getElementById('nav-list')
-const navLinks = document.querySelectorAll('a.navLinks')
-const screen = document.querySelectorAll('section.screen')
-const screenHeader = document.querySelectorAll('header.screen-header')
-const btnClose = document.querySelectorAll('span.screenclose')
-let offSetX, offSetY
+const body = document.getElementById('body')
+const timer = document.getElementById('timer')
+const btnTheme = document.getElementById('btnThemeMode')
 
-btnMobile.addEventListener('touchend', toggleMenu)
-
-//Essa função adiciona/remove a classe active do menu para abrir/fechar no mobile
-function toggleMenu() { 
-
-    navList.classList.toggle('active')
-
-    //troca o icon menu hamburger ou X quando o menu estiver aberto/fechado
-    if(btnMobile.innerText == "menu") {
-        btnMobile.innerText = "close"
-    }else {
-        btnMobile.innerText = "menu"
+btnTheme.addEventListener('click', () => {
+    if(btnTheme.innerText == "light_mode") {
+        btnTheme.innerText = "dark_mode"
+    }else if(btnTheme.innerText == "dark_mode") {
+        btnTheme.innerText = "light_mode"
     }
+})
+
+body.addEventListener('load', time)
+
+function time() {
+    const date = new Date()
+    const hora = date.getHours()
+    const min = date.getMinutes()
+
+    timer.innerText = `${hora}:${min}`
+
 }
-
-//define a janela de introdução para block/visivel
-for(let i=0; i<1; i++) {
-    screen[i].style.display = 'block'
-}
-
-//define todas as telas para display none
-for(let i=1; i<screen.length; i++) {
-    screen[i].style.display = 'none'
-}
-
-//fechar o menu mobile ao clicar em qualquer botão
-for(let i=0; i<navLinks.length; i++) {
-    navLinks[i].addEventListener('touchend', () => {
-        navList.classList.toggle('active')
-        //troca o icon menu hamburger ou X quando o menu estiver aberto/fechado
-        if(btnMobile.innerText == "menu") {
-            btnMobile.innerText = "close"
-        }else {
-            btnMobile.innerText = "menu"
-        }
-    })
-}
+setInterval(time, 1000)
 
 
-//faz o botão X da janela correspondente, fecha-la
-for(let i=0; i<btnClose.length; i++) {
-    btnClose[i].addEventListener('click', () => {
-            screen[i].style.display = 'none'
-    })
-}
-
-//faz os botões da area de trabalho abrir/fechar a janela respectiva a ele
-for(let i=0; i<navLinks.length; i++) {
-    navLinks[i].addEventListener('click', () => {
-        if(screen[i].style.display == 'block') {
-            screen[i].style.display = 'none'
-        }else if(screen[i].style.display == 'none') {
-            screen[i].style.display = 'block'
-        }
-    })
-}
-
-//movimentando as janelas
-for(let i=0; i<screen.length; i++) {
-    const move = (e) => {
-        screen[i].style.left = `${e.clientX - offSetX}px`
-        screen[i].style.top = `${e.clientY - offSetY}px`
-    }
-
-    screenHeader[i].addEventListener("mousedown", (e) => {
-        offSetX = e.clientX - screen[i].offsetLeft
-        offSetY = e.clientY - screen[i].offsetTop
-        document.addEventListener("mousemove", move)
-    })
-
-    document.addEventListener("mouseup", () => {
-        document.removeEventListener("mousemove", move)
-    })
-}
