@@ -131,6 +131,10 @@ main {
                 inset 1px 1px 5px rgba(0, 0, 0, .2);
 }
 
+#inicio #painel #btnThemeMode:hover {
+    cursor: pointer;
+}
+
 #inicio #imagem {
     background-color: white;
     width: 240px;
